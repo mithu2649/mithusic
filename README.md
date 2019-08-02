@@ -1,4 +1,5 @@
 # mithusic
 
-This used to be a project of [https://www.mithusic,com/](#)
+This used to be a project hosted @[https://www.mithusic,com/](#)
+
 It is discontinued now.
