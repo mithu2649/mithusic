@@ -1,0 +1,352 @@
+/* Designed by Mithu Mondal. Please do not delete this line. */
+/* header */
+#menu{
+    background-color:black;
+    height:50px;	
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 999;
+}
+
+#menu-toggle{
+    color:#fff;
+    font-size:30px;
+    height:50px;
+    line-height: 50px;
+    padding-left:15px;
+    padding-right: 15px;
+    display: inline-block;
+    cursor:pointer;
+    
+}
+#menu-toggle:hover{
+    background:gray;
+}
+#menu .logo_text{
+    color:lime;
+    font-weight:bold;
+    line-height:50px;
+    font-size:20px;
+    padding-left:10px;
+    cursor:pointer
+}
+.btn-videos{
+    height:25px;
+    margin-top:5px;
+    margin-right:5px;
+    line-height:25px;
+    color:#fff;
+    background-color: transparent; 
+    border: 2px solid green;
+    background-color:rgba(0, 112, 0, 0.336);
+    text-decoration: none;
+    padding:6px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 8px;
+    float:right;
+    text-align: center;
+}
+.btn-videos:hover{
+    border-color:gray;
+    background-color:green;
+    color:#fff !important;
+}
+
+/* end of header */
+
+/* footer */
+#footer{
+    border-bottom:5px solid red;
+    background-color:black;
+    color:white;
+    min-height: 40px;
+    width:100%;
+    z-index: 99;
+}
+#footer .copyright{
+    text-align: center;
+}
+#footer .copyright a{
+    color:gray;
+    text-decoration: none;
+}
+#footer .copyright a:hover{
+    color:lime;
+}
+#footer #social{
+
+    text-align: center;
+} 
+#footer #social img{
+    display:inline-block;
+    margin-left:10px;
+    margin-right:10px;
+    filter:grayscale(100);
+    transition:.3s ease;
+    height:30px;
+    width:30px;
+}
+#footer #social img:hover{
+    filter:none;
+    height:35px;
+    width:35px;
+}
+
+/* body and main content */
+body{
+    font-family: 'Segoe UI Light', 'Open Sans', 'Roboto', sans-serif;
+    margin:0;padding:0;
+    background-color: black;
+
+}
+
+
+#main{
+    margin-top:20px;
+    min-height: 400px !important; 
+}
+.container-center{
+    text-align:center;
+    width:500px;
+    height:200px;
+    margin:auto;
+    margin-top:170px;
+}
+.container-center p, .container-center h1{
+    margin:0;
+}
+
+/* body of the page */
+#main{
+    margin:0;
+    margin-top:40px;
+    padding:10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:rgba(218, 218, 218, 0.945);
+    z-index: 1;
+}
+
+/* end of body */
+.recent_container{
+    background-color:white;
+}
+.container-main .songs_container{
+    list-style: none;
+    padding-left:0;
+}
+.container-main .songs_container a{
+    text-decoration: none;
+    color:black;
+    font-size:19px;
+}
+.container-main .songs_container .song_name{
+    background-color:rgb(219, 219, 219);
+    border:1px solid gray;
+    border-radius:5px;
+    padding:5px;
+    margin-top:5px;
+    transition: .4s ease;
+}
+.container-main .songs_container .song_name:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+#recent_songs .container-main .songs_container .song_name{
+    border:1px solid green;
+    border-left:4px solid green;
+    background-color:rgba(0, 255, 0, 0.075);
+}
+#recent_songs .container-main .songs_container .song_name:hover{
+    background-color: rgba(156, 235, 156, 0.644);
+}
+
+.btnPlayPause{
+    border-radius: 50%;
+    background: transparent;
+    color:rgb(133, 133, 133);
+    border:2px solid rgb(133, 133, 133);
+    height:35px;
+    width:35px;
+    line-height:30px;
+    margin:5px;
+    outline:none;
+    cursor:pointer;
+    transition:.3s ease;
+    font-size:18px;
+}
+.btnPlayPause:hover{
+    border:2px solid rgb(0, 75, 22);
+    color: rgb(0, 75, 22);
+}
+.btnPlayPause:focus{
+    background-color:rgba(0, 255, 0, 0.452);
+    border:2px solid rgb(0, 75, 22);
+    color: rgb(0, 75, 22);
+}
+/* download button */
+.btn-dwn{
+    font-size:16px !important;
+    font-weight:bold;
+    border-radius:20px;
+    color:rgb(133, 133, 133)!important;
+    border:2px solid rgb(133, 133, 133); 
+    padding-left:15px !important;
+    padding-right:15px !important;
+    padding:5px;
+    margin-left:10px;
+    transition:.3s ease;
+}
+.btn-dwn:hover{
+    border:2px solid rgb(0, 75, 22);
+    color: rgb(0, 75, 22) !important;
+    background:#fff;
+}
+.btn-float{
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    color:rgb(133, 133, 133);
+    border:none;
+    font-size: 28px;
+    height:60px;
+    line-height:60px;
+    width:60px;
+    outline:none;
+    cursor:pointer;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    transform: rotateZ(90deg);
+    transition: .2s ease;
+}
+.btn-float:hover{
+    box-shadow:3px 3px 14px rgb(0, 0, 0);
+    margin-bottom:5px;
+}
+
+/* overlay css */
+#overlay{
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    min-height:900px; 
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:.7;
+    /* display:none; */
+}
+
+.close{
+    text-align:center;
+    width:30px;
+    height:20px;
+    float: right;
+    padding:10px;
+    font-size:35px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    line-height: 20px;
+    transition:.3s ease;
+}
+.close:hover{
+    background-color: red;
+    color:#fff;
+}
+
+.request-form{
+    background-color: rgba(0, 0, 0, 0.774);
+    color:#fff !important; 
+    padding-left:34px;
+    max-width:800px;
+    height:550px;
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    margin-right:auto;
+    margin-left:auto;
+    text-align: left;
+}
+.request-form form{
+    text-align:left !important;
+}
+.request-form form input[type="text"]{
+    width:90%;
+    height:35px;
+    color:white;
+    border:none;
+    border-bottom:1.5px solid rgb(53, 53, 53);
+    padding-left:10px;
+    outline:none;
+    margin-top:0px;
+    background-color:rgba(51, 51, 51, 0.301);
+}
+
+.request-form form input[type="text"]:focus{
+    border-bottom:2px solid rgb(0, 75, 0);
+    color:rgb(137, 255, 137);
+}
+.request-form form input[type="submit"],.request-form form input[type="button"]{
+    font-size:15px;
+    height:35px;
+    width:90px;
+    line-height:35px;
+    border:none;
+    cursor:pointer;
+}
+.request-form form input[type="submit"]{
+    background-color:green;
+    color:#fff;
+}
+.request-form form input[type="button"]{
+    background-color:red;
+    color:#fff;
+}
+
+#alert-div{
+    position:fixed;
+    background-color:rgba(0, 0, 0, 0.829);
+    border-radius: 5px;
+    color:#fff;
+    text-align:center;
+    height:50px;
+    top:60px;
+    width:90%;
+    padding:3px;
+    margin-left:5%;
+    line-height: 50px;
+    display: none;
+}
+#alert-div #closeNotif{
+    background-color:rgb(255, 0, 0);
+    color:#fff;
+    display:block;
+    width:30px;
+    text-align: center;
+    line-height: 50px;
+    float:right;
+    height:100%;
+    width:50px;
+    font-size: 30px;
+    cursor:pointer;
+}
+
+/* videos page */
+.video-container{
+    margin-top:9px;
+    max-width:310px;
+    height:240px;
+    background-color:black;
+    text-align:center;
+    color:#fff;
+    display:inline-block !important;
+}
+.video-container iframe{
+    height:185px !important; 
+    width:300px !important;
+    display:block !important;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mithusic - Mithu's music archive</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+			<!-- For Google -->
+			<meta name="description" content="Welcome to Mithusic - Mithu's music archive :: Listen to Mithu's songs, watch videos and more... " />
+			<meta name="keywords" content="Mithusic, Mithu, Mondal, Mithu Mondal, Songs by Mithu, Videos by Mithu, Mithu's archive, About mithu, music, mithuation, songs, videos" />
+
+			<meta name="author" content="Mithu" />
+			<meta name="copyright" content="Mithusic 2018" />
+			<meta name="application-name" content="Mithusic" />
+
+			<!-- For Facebook -->
+			<meta property="og:title" content="Welcome to Mithusic" />
+			<meta property="og:type" content="music.album" />
+			<meta property="og:image" content="https://www.mithusic.mlfb_cover.png" />
+			<meta property="og:url" content="https://www.mithusic.ml/" />
+			<meta property="og:description" content="Mithu's music archive :: Listen to Mithu's songs, watch videos, and more..." />
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/side_nav.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:100" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+		<span id="menu-toggle" onclick="openNav()">&equiv;</span>
+		<a style="text-decoration:none;" href="index.php"><span class="logo_text">Mithu<span style="color:gray">sic</span></span></a>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="about.php">About</a>
+				<a href="index.php">Songs</a>
+				<a href="videos.php">Videos</a>
+				<a href="photos.php">Photos</a>
+				<a href="contact.php">Contact</a>
+				<a href="#">Report a problem</a>
+			</div>
+    </div>
+    <div id="alert-div"><span id="closeNotif" onclick="this.parentElement.style.display='none';">&times;</span><span id="alert-div-text">Song requested succesfully!</span></div>
+
+	<div id="main"><!-- Main Content opened -->
+
+
+
+<style>
+        #tab{
+            max-width:900px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        *{
+            font-family: 'Segoe UI Light', 'Open Sans', 'Roboto', sans-serif;
+        }
+        table{
+            border-spacing: 0;
+            border-collapse: separate;
+            border:1px solid black;
+            width:100%;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        tr{
+            width:100%;
+            background-color:rgb(230, 230, 230);
+        }
+        td, th {
+            width:25%;
+            padding:10px;
+            text-align: left;
+            border-spacing:0;
+            border-collapse:collapse;
+        }
+        tr:nth-child(odd){
+            background-color:rgb(197, 197, 197);
+        }
+        th{
+            background-color:black;
+            color:white;
+        }
+
+    </style>    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+    $('document').ready(function(){
+        $('img[src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().parent().remove();
+    });
+</script>
+
+            <div id="tab">
+                <h1>All Requests</h1>
+                <table class="table">
+                    <tr>
+                        <th>Song</th>
+                        <th>Artist</th> 
+                        <th>Album</th> 
+                        <th>By</th> 
+                    </tr>
+                    <tr>
+                        <td>Tere Bin</td>
+                        <td>Mithu</td>
+                        <td>recordings</td>
+                        <td>Mithu </td>
+                    </tr>
